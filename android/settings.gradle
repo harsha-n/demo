@@ -1,0 +1,11 @@
+rootProject.name = 'SpeechDemo'
+include ':react-native-tts'
+project(':react-native-tts').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tts/android')
+include ':react-native-stt'
+project(':react-native-stt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-stt/android/lib')
+include ':react-native-speech-to-text'
+project(':react-native-speech-to-text').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-speech-to-text/android')
+include ':VoiceModule', ':app'
+project(':VoiceModule').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-voice')
+
+include ':app'
