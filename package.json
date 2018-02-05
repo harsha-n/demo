@@ -1,27 +1,41 @@
 {
-	"name": "SpeechDemo",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "16.0.0",
-		"react-native": "0.50.4",
-		"react-native-android-voice": "^0.6.0",
-		"react-native-speech": "^0.1.2",
-		"react-native-speech-to-text": "0.0.8",
-		"react-native-stt": "0.0.2",
-		"react-native-tts": "^1.4.1"
-	},
-	"devDependencies": {
-		"babel-jest": "22.1.0",
-		"babel-preset-react-native": "4.0.0",
-		"jest": "22.1.4",
-		"react-test-renderer": "16.0.0"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "react-native-webview-file-upload-android",
+  "version": "0.4.2",
+  "main": "index.js",
+  "description": "ReactNative's WebView on Android does not support file input. This library adds in an `<AndroidWebView>` that does support file input.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oblongmana/react-native-webview-file-upload-android"
+  },
+  "license": "BSD-3-Clause",
+  "files": [
+    "index.js",
+    "AndroidWebView.js",
+    "android/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "peerDependencies": {
+    "react": "16.0.0",
+"react-native": "0.50.3"
+  },
+  "dependencies": {
+    "keymirror": "^0.1.1",
+    "warning": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+"react-test-renderer": "16.0.0",
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+  }
 }
