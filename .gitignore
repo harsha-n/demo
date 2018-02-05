@@ -34,11 +34,26 @@ local.properties
 #
 node_modules/
 npm-debug.log
-yarn-error.log
 
 # BUCK
 buck-out/
 \.buckd/
+android/app/libs
+
+
+# Mietercasting-specific files
+apikey.txt
+tokens.txt
+tokens-ios.txt
+android/app/my-release-key.keystore
+env/
+coverage/
+fragen.txt
+rotationListeners.txt
+tasks.txt
+*.keystore
+*.pem
+*.cer
 *.keystore
 
 # fastlane
@@ -46,8 +61,8 @@ buck-out/
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
 
-*/fastlane/report.xml
-*/fastlane/Preview.html
-*/fastlane/screenshots
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
